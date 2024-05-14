@@ -25,10 +25,12 @@ def plusMinus(arr):
             zcount += 1
     total_items = len(arr)
 
-    zfraction = "{{:.{}f}}".format(4).format(zcount / total_items)
-    pfraction = "{{:.{}f}}".format(4).format(pcount / total_items)
-    nfraction = "{{:.{}f}}".format(4).format(ncount / total_items)
-    print(pfraction, nfraction, zfraction)
+    zfraction = "{{:.{}f}}".format(6).format(zcount / total_items)
+    pfraction = "{{:.{}f}}".format(6).format(pcount / total_items)
+    nfraction = "{{:.{}f}}".format(6).format(ncount / total_items)
+    print(pfraction)
+    print(nfraction)
+    print(zfraction)
 
 if __name__ == '__main__':
     n = int(input().strip())
